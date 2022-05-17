@@ -11,7 +11,7 @@ var refreshInterval;
 
 async function loadId() {
   var response = prompt(
-    "Please enter the user you want to track's hanlde in the prompt down below."
+    "Please enter the user you want to track's channel name in the prompt down below."
   );
   if (!response) return console.log("User cancellled prompt... that's pretty sad.")
 
@@ -81,5 +81,5 @@ function loadCounter() {
         // There was an error
         console.warn("Something went wrong.", err);
       });
-  }, 2000);
+  }, 5000);
 }
