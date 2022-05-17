@@ -81,5 +81,5 @@ function loadCounter() {
         // There was an error
         console.warn("Something went wrong.", err);
       });
-  }, 5000);
+  }, 2000);
 }
