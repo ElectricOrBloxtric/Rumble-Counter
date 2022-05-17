@@ -16,7 +16,7 @@ async function loadId() {
   if (!response) return console.log("User cancellled prompt... that's pretty sad.")
 
   await fetch(
-    "https://api.rumblecounter.live/api/search?query=" +
+    "https://api.rumblecounter.live/search?query=" +
     response
   )
     .then(function(response) {
