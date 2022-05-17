@@ -38,7 +38,7 @@ async function loadId() {
 
 function loadCounter() {
   fetch(
-    "https://api.rumblecounter.live/api/user?id=" +
+    "https://api.rumblecounter.live/user?id=" +
     rumbleUser.id
   )
     .then(function(response) {
@@ -61,7 +61,7 @@ function loadCounter() {
     });
 
   refreshInterval = setInterval(() => {
-    fetch("https://api.rumblecounter.live/api/user?id=" +
+    fetch("https://api.rumblecounter.live/user?id=" +
       rumbleUser.id)
       .then(function(response) {
         // The API call was successful!
